@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swpedia home page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1 {
+      color: #0056b3;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 1.2em;
+    }
+
+    p, ul {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .service-section {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .note {
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styles pour l'iframe en plein écran */
+    .iframe-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .iframe-overlay iframe {
+      width: 90%;
+      height: 95%;
+      border: none;
+      border-radius: 15px;
+    }
+
+    /* Bouton de fermeture */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ff3333;
+      color: white;
+      border: none;
+      font-size: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>SWPedia - Home page</h1>
+
+  <p>Welcome to the SWPedia home page from Signabroam. Here you will find some websites about the world of the radio and a full wiki about radios stations!</p>
+
+  <div class="service-section">
+    <h2>1. Priyom.org</h2>
+    <p>Priyom.org is a full website about the shortwaves radio and number stations.</p>
+    <ol>
+      <li>Click <a href="https://priyom.org/" class="link-iframe">here</a> to access Priyom.org.</li>
+    </ol>
+  </div>
+  
+  <div class="service-section">
+    <h2>2. Eibi Database</h2>
+    <p>The Eibi database is a site that can give you all the list of "stored" known frequencies and more.</p>
+    <ol>
+      <li>Click <a href="http://www.eibispace.de/" class="link-iframe">here</a> to access Eibi.</li>
+    </ol>
+  </div>
+  
+    <div class="service-section">
+    <h2>3. Shortwave.Live</h2>
+    <p>The Shortwave.Live website is used to give you in real time the broadcast time of all shortwave radio stations.</p>
+    <ol>
+      <li>Click <a href="https://shortwave.live/" class="link-iframe">here</a> to access Shortwave.Live.</li>
+    </ol>
+  </div>
+  
+  <div class="service-section">
+    <h2>4. SigidWiki ("Signal Identification Guide")</h2>
+    <p>This wiki is intended to help identify radio signals through example sounds and waterfall images. Most signals are received and recorded using a software defined radio such as the RTL-SDR, Airspy, SDRPlay, HackRF, BladeRF, Funcube Dongle, USRP and other devices.</p>
+    <ol>
+      <li>Click <a href="https://www.sigidwiki.com/wiki/Signal_Identification_Guide" class="link-iframe">here</a> to access SigidWiki.</li>
+    </ol>
+  </div>
+  
+  <div class="service-section">
+    <h2>4. WebArchive</h2>
+    <p>WebArchive is full wayback machine for datas and Websites, the WebArchive also content Radios stuff.</p>
+    <ol>
+      <li>Click <a href="https://archive.org/" class="link-iframe">here</a> to access WebArchive.</li>
+    </ol>
+  </div>
+  
+
+  <footer>
+    <p>For more information, visit the official documentation pages for each services.</p>
+    <p><em>Retrieved from signabroam/swpedia</em></p>
+  </footer>
+
+  <!-- Div pour l'iframe en plein écran -->
+  <div class="iframe-overlay" id="iframeOverlay">
+    <button class="close-btn" onclick="closeIframe()">X</button>
+    <iframe id="iframeContent" src=""></iframe>
+  </div>
+
+  <script>
+    // Fonction pour ouvrir l'iframe
+    function openIframe(url) {
+      document.getElementById('iframeContent').src = url;
+      document.getElementById('iframeOverlay').style.display = 'flex';
+    }
+
+    // Fonction pour fermer l'iframe
+    function closeIframe() {
+      document.getElementById('iframeOverlay').style.display = 'none';
+      document.getElementById('iframeContent').src = ""; // Reset l'URL pour libérer la mémoire
+    }
+
+    // Sélection des liens avec la classe "link-iframe" et ajout d'un écouteur de clic
+    document.querySelectorAll('.link-iframe').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche l'ouverture du lien dans un nouvel onglet
+        openIframe(this.href);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
