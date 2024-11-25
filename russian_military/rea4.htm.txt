@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REA4 - Swpedia Station</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff;
+            color: #000;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #ccc;
+        }
+        a {
+            color: #0645AD;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .infobox {
+            float: right;
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        .infobox table {
+            width: 100%;
+            border: none;
+        }
+        .infobox th, .infobox td {
+            border: none;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>REA4 - Swpedia Station</h1>
+
+    <div class="infobox">
+        <h2>Station Info</h2>
+        <table>
+            <tr><th>Swpedia ID</th><td>M57</td></tr>
+            <tr><th>Name</th><td>REA4</td></tr>
+            <tr><th>Frequencies</th><td>Below</td></tr>
+            <tr><th>Status</th><td>Active</td></tr>
+            <tr><th>Transmission</th><td>CW</td></tr>
+            <tr><th>Emission mode</th><td>OOK (A1A); 1000 Hz FSK (F1A)</td></tr>
+            <tr><th>Location</th><td>Moscow; Irkutsk area; Khabarovsk, Russia</td></tr>
+        </table>
+    </div>
+
+    <h2>Activity Frequencies</h2>
+    <ul>
+        <li>20069</li>
+        <li>22212</li>
+        <li>23672</li>
+        <li>23746</li>
+        <li>23767</li>
+        <li>27627</li>
+        <li>62596</li>
+        <li>73842</li>
+    </ul>
+
+    <h2>Description</h2>
+    <p>REA4 is a station of the Long-Range Aviation Command [ru] of the Russian Air Force. It broadcasts weather reports and "Monolith" messages using Morse code.</p>
+
+    <h2>Frequencies</h2>
+
+    <h3>European Russia</h3>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Daytime</th>
+                <td>4649, 7314</td>
+                <td>5293, 9595</td>
+                <td>4835, 7942</td>
+                <td>5023, 7746</td>
+                <td>4649, 7314</td>
+                <td>4649, 7314</td>
+                <td>4649, 7314</td>
+                <td>4649, 7314</td>
+                <td>4649, 7314, 4628</td>
+                <td>4649, 7314, 4628</td>
+                <td>4649, 7314</td>
+                <td>4649, 7314</td>
+            </tr>
+            <tr>
+                <th>Nighttime</th>
+                <td>2737, 4179</td>
+                <td>2721, 4379</td>
+                <td>3531, 4357</td>
+                <td>2807, 4521</td>
+                <td>2737, 4179</td>
+                <td>2737, 4179</td>
+                <td>2737, 4179</td>
+                <td>2737, 4179</td>
+                <td>2737, 4179, 4628</td>
+                <td>2737, 4179, 4628</td>
+                <td>2737, 4179</td>
+                <td>2737, 4179</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Asiatic Russia</h3>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Daytime</th>
+                <td>10981</td>
+                <td>10653</td>
+                <td>12337</td>
+                <td>10735</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+                <td>10981</td>
+            </tr>
+            <tr>
+                <th>Dawn/Dusk</th>
+                <td>7785</td>
+                <td>7515</td>
+                <td>7402</td>
+                <td>8078</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+                <td>7785</td>
+            </tr>
+            <tr>
+                <th>Nighttime</th>
+                <td>6087</td>
+                <td>5853</td>
+                <td>6358</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+                <td>6087</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Weather Reports</h2>
+    <p>Every hour at H+40, REA4 broadcasts a SYNOP report from one of the Long-Range Aviation airfields. These broadcasts consist of a series of 5-digit groups preceded by REA4 REA4 = and followed by = REA4 K. The following is an example message with a translation:</p>
+
+    <pre>
+REA4 REA4 = 20100 99900 19150 27627 81997 21702 10014 21015 70300 82031 912// = REA4 K
+20100 - 20th of the month at 10:00
+99900 - Standard weather broadcast type
+19150 - Beginning of the observation period; here: 19th of the month at 15:00
+27627 - Airfield identifier
+81997 - Manned weather station, weather group included, cloudbase above 2500 m, visibility 10 km
+21702 - 2/8ths total cloud cover, 170° wind direction, 2 m/s windspeed
+10014 - +1.4°C temperature
+21015 - -1.5°C dewpoint
+70300 - Clouds developing from previously clear skies
+82031 - Mid-level altocumulus translucidous and high-level cirrus fibratus
+912// - Observation made during the 12th hour, minutes omitted
+    </pre>
+
+    <h2>Airfield Identifiers</h2>
+    <ul>
+        <li>20069 - Engels-2</li>
+        <li>22212 - Shaykovka</li>
+        <li>23672 - Dyagilevo</li>
+        <li>23746 - Olenya</li>
+        <li>23767 - Ukrainka</li>
+        <li>27627 - Belaya</li>
+        <li>62596 - Khorol</li>
+        <li>73842 - Anadyr</li>
+    </ul>
+
+    <footer>
+        Retrieved from "<em><a href="/index.html">Signabroam</a></em>" and "<em><a href="https://priyom.org/military-stations/russia/rea4">Priyom.org</a></em>".
+    </footer>
+
+</body>
+</html>
